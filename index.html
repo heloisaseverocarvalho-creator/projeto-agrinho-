@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável | Uso da Água</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Agro<span>Sustentável</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#calculadora">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Agricultura Pede Gota de Consciência</h1>
+            <p>Unindo tecnologia, respeito à terra e gestão inteligente dos recursos hídricos para alimentar o amanhã.</p>
+            <a href="#tecnologias" class="btn-principal">Descubra as Técnicas</a>
+        </div>
+    </section>
+
+    <section id="importancia" class="container section">
+        <div class="section-title">
+            <h2>A Importância do Manejo Hídrico</h2>
+            <p>O campo é o maior consumidor de água doce do planeta. Cultivar com inteligência é proteger nossa maior riqueza.</p>
+        </div>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>Preservação do Solo</h3>
+                <p>A irrigação correta evita a erosão e a lixiviação de nutrientes, mantendo a terra fértil por gerações.</p>
+            </div>
+            <div class="card">
+                <h3>Segurança Alimentar</h3>
+                <p>Garantir o uso eficiente da água assegura a produção de alimentos mesmo em períodos de estiagem.</p>
+            </div>
+            <div class="card">
+                <h3>Sustentabilidade Econômica</h3>
+                <p>Reduzir o desperdício de água diminui diretamente os custos com energia elétrica e insumos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="bg-light section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tecnologias que Transformam</h2>
+                <p>Inovações fundamentais para a otimização da água no meio rural.</p>
+            </div>
+            <div class="grid-tecnologias">
+                <div class="tec-item">
+                    <h4>Irrigação por Gotejamento</h4>
+                    <p>Aplica a água diretamente na raiz da planta, reduzindo a evaporação em até 90% se comparado aos métodos tradicionais.</p>
+                </div>
+                <div class="tec-item">
+                    <h4>Sensores de Umidade do Solo</h4>
+                    <p>Dispositivos que medem em tempo real se a planta realmente precisa de água, evitando o excesso de rega.</p>
+                </div>
+                <div class="tec-item">
+                    <h4>Captação de Água da Chuva</h4>
+                    <p>Cisternas e bacias de acumulação que armazenam a água pluvial para uso estratégico nos períodos de seca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="container section">
+        <div class="section-title">
+            <h2>Simulador de Economia Hídrica</h2>
+            <p>Descubra o potencial de economia ao migrar para sistemas inteligentes de irrigação.</p>
+        </div>
+        <div class="calculadora-box">
+            <div class="input-group">
+                <label for="area">Tamanho da área de cultivo (em hectares):</label>
+                <input type="number" id="area" placeholder="Ex: 10" min="1">
+            </div>
+            <button id="btn-calcular" class="btn-principal">Calcular Economia Estimada</button>
+            <div id="resultado" class="resultado hidden">
+                <p>Adotando o gotejamento tecnológico, você pode economizar aproximadamente:</p>
+                <h3 id="litros-economizados">0 Litros</h3>
+                <p>de água por mês em comparação à irrigação por sulcos tradicional!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroSustentável. Cultivando um futuro consciente.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
